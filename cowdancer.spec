@@ -7,18 +7,17 @@ Name:		%name
 Version: 	%version
 Release: 	%release
 License: GPL
-Group: System Environment/Shells
+Group: Development/Other 
 Source: %{name}_%{version}.tar.gz
 Patch0: Makefile.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 Tries to make copy-on-write semantics upon hard-link copied
-directory trees generated with 'cp -la'
+directory trees generated with 'cp -la'.
 'cow-shell' command invokes a shell session. Within that session,
-under the directory cow-shell was invoked, 
-cowdancer will create a new file when existing i-nodes are opened for 
-write.
+under the directory cow-shell was invoked, cowdancer will create 
+a new file when existing i-nodes are opened for  write.
 Useful for quick scratch workspace and experimentation.
 'cowbuilder' command is a wrapper for pbuilder which allows using 
 pbuilder-like interface over cowdancer environment.
