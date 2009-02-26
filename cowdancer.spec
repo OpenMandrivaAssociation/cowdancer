@@ -2,7 +2,7 @@
 %define version 0.48
 %define release %mkrel 1
 
-Summary:	Copy-on-write directory tree utility.
+Summary:	Copy-on-write directory tree utility
 Name:		%name
 Version: 	%version
 Release: 	%release
