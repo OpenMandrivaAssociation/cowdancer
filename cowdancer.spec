@@ -31,7 +31,7 @@ pbuilder-like interface over cowdancer environment.
 
 %install
 rm -rf %{buildroot}
-%{makeinstall_std}
+%{makeinstall_std} LIBDIR=%_libdir
 
 %clean
 rm -rf %{buildroot}
