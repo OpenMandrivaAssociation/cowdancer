@@ -1,6 +1,6 @@
 %define name    cowdancer
 %define version 0.48
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary:	Copy-on-write directory tree utility
 Name:		%name
