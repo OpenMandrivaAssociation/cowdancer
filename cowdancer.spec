@@ -44,3 +44,23 @@ rm -rf %{buildroot}
 %{_libdir}/%{name}/*
 %{_mandir}/man*/*
 %{_sysconfdir}/bash_completion.d/*
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 0.48-4mdv2011.0
++ Revision: 617433
+- the mass rebuild of 2010.0 packages
+
+* Thu Sep 10 2009 Thierry Vignaud <tv@mandriva.org> 0.48-3mdv2010.0
++ Revision: 437128
+- rebuild
+
+* Fri Feb 27 2009 Anne Nicolas <ennael@mandriva.org> 0.48-2mdv2009.1
++ Revision: 345720
+- bump
+- fix libdir
+- more cleaning
+- clean spec file
+- import cowdancer
+
+
