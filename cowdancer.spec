@@ -20,7 +20,7 @@ pbuilder-like interface over cowdancer environment.
 
 %prep
 %setup -q -n %{name}-%{version}
-%patch0 -p1
+%patch0 -p0
 
 %build
 %{make}
