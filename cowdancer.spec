@@ -1,16 +1,12 @@
-%define name    cowdancer
-%define version 0.48
-%define release 5
 
 Summary:	Copy-on-write directory tree utility
-Name:		%name
-Version: 	%version
-Release: 	%release
+Name:		cowdancer
+Version: 	0.89
+Release: 	1
 License: GPL
 Group: Development/Other 
-Source: %{name}_%{version}.tar.gz
-Patch0: Makefile.patch
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+Source: http://httpredir.debian.org/debian/pool/main/c/cowdancer/cowdancer_%{version}.tar.xz
+Patch0: makedev_glibc_fix.patch
 
 %description
 Tries to make copy-on-write semantics upon hard-link copied
@@ -24,7 +20,7 @@ pbuilder-like interface over cowdancer environment.
 
 %prep
 %setup -q -n %{name}-%{version}
-%patch0 -p0
+%patch0 -p1
 
 %build
 %{make}
