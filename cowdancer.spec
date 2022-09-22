@@ -6,7 +6,6 @@ Release: 	1
 License: GPL
 Group: Development/Other 
 Source: http://httpredir.debian.org/debian/pool/main/c/cowdancer/cowdancer_%{version}.tar.xz
-Patch0: makedev_glibc_fix.patch
 
 %description
 Tries to make copy-on-write semantics upon hard-link copied
@@ -20,7 +19,7 @@ pbuilder-like interface over cowdancer environment.
 
 %prep
 %setup -q -n %{name}-%{version}
-%patch0 -p0
+
 
 %build
 %{make}
