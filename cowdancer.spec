@@ -7,6 +7,7 @@ License: GPL
 Group: Development/Other 
 Source: http://httpredir.debian.org/debian/pool/main/c/cowdancer/cowdancer_%{version}.tar.xz
 
+BuildRequires:	make
 %description
 Tries to make copy-on-write semantics upon hard-link copied
 directory trees generated with 'cp -la'.
